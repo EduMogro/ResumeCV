@@ -4,13 +4,348 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Resume CV - Eduardo Mogro</title>
+    <link rel="shortcut icon" href="favicon.png">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
+    
     <!-- Scripts -->
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <header id="header" class="l-header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Mogro</a>
+            <div id="nav-menu" class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <span class="fa fa-home nav__icon"></span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <span class="fa fa-user nav__icon"></span>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <span class="fa fa-book-open nav__icon"></span>
+                            Educación
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <span class="fa fa-file-invoice nav__icon"></span>
+                            Habilidades
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <span class="fa fa-suitcase nav__icon"></span>
+                            Experiencia
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificate" class="nav__link">
+                            <span class="fa fa-medal nav__icon"></span>
+                            Certificados
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <span class="fa fa-external-link-square-alt nav__icon"></span>
+                            Referencias
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-toggle" class="nav__toggle">
+                <span class="fas fa-th"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <div class="resume">
+            <div class="resume__left">
+                <section id="home" class="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="img/photo.jpg" alt="Imagen de perfil de Eduardo Mogro" class="home__img">
+                            <h1 class="home__title">Mogro <b>Hugo Eduardo</b></h1>
+                            <h3 class="home__profession">Web Developer Jr.</h3>
+
+                            <div><a download="" href="" class="home__button-movil">Descarga</a></div>
+                        </div>
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <span class="fa fa-info-circle home__icon"></span>
+                                Part-time, Full-time, Remoto
+                            </span>
+                            <span class="home__information">
+                                <span class="fa fa-envelope home__icon"></span>
+                                hemogro@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <span class="fab fa-linkedin home__icon"></span>
+                                @hugo-eduardo-mogro
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="social section">
+                    <h2 class="section-title">REDES</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://www.instagram.com/edumogro/" target="_blank" class="social__link">
+                            <i class="fab fa-instagram social__icon"></i>@edumogro
+                        </a>
+                        <a href="https://www.facebook.com/edumogro" target="_blank" class="social__link">
+                            <i class="fab fa-facebook social__icon"></i>@edumogro
+                        </a>
+                        <a href="https://twitter.com/edu_mogro" target="_blank" class="social__link">
+                            <i class="fab fa-twitter social__icon"></i>@edu_mogro
+                        </a>
+                    </div>
+                </section>
+
+                <section id="profile" class="profile section">
+                    <h2 class="section-title">Perfil</h2>
+                    <p class="profile__description">
+                        Me encanta programar y ver la mejor forma de resolver los problemas con ayuda del código, 
+                        siempre aprendiendo y aplicando buenas prácticas con principios SOLID, Clean Code y TDD.
+                        Apasionado por la tecnología, la cultura asiatica y el cine.
+                    </p>
+                </section>
+
+                <section id="education" class="education section">
+                    <h2 class="section-title">Educación</h2>
+
+                    <div class="education__container bd-grid">
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">LICENCIATURA EN INFORMÁTICA</h3>
+                                <span class="education__studies">Universidad Nacional de La Plata</span>
+                                <span class="education__year">2006 - En curso</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">ANALISTA DEL CONOCIMIENTO</h3>
+                                <span class="education__studies">Plan Nacional 111Mil</span>
+                                <span class="education__year">2018</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">CURSO PHP Y MYSQL</h3>
+                                <span class="education__studies">Udemy</span>
+                                <span class="education__year">2018</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">HTML5 FUNDAMENTOS DE UNA PÁGINA WEB</h3>
+                                <span class="education__studies">Educación IT - Online</span>
+                                <span class="education__year">2017</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section id="skills" class="skills section">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span>HTML5</li>
+                            <li class="skills__name"><span class="skills__circle"></span>CSS3</li>
+                            <li class="skills__name"><span class="skills__circle"></span>JavaScript</li>
+                            <li class="skills__name"><span class="skills__circle"></span>PHP</li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span>MYSQL</li>
+                            <li class="skills__name"><span class="skills__circle"></span>GIT</li>
+                            <li class="skills__name"><span class="skills__circle"></span>JAVA</li>
+                            <li class="skills__name"><span class="skills__circle"></span>LARAVEL</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="resume__right">
+
+                <section id="experience" class="experience section">
+                    <h2 class="section-title">Experiencia</h2>
+                    <div class="experience__container bd-grid">
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">SERAFINADELICIAS.COM.AR</h3>
+                                <span class="experience__company">2020 - Serafina Delicias</span>
+                                <p class="experience__description">
+                                    Planificación, diseño y desarrollo del sitio web serafinadelicias.com.ar .
+                                    Se usó VueJs, Vuetify, Vueper, JQuery, Owl, AOS, Axios, Pushbar.
+                                    Uso de Mobile First, posicionamiento SEO y nociones básicas de UX/UI.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">CALEIDOSWEB.COM</h3>
+                                <span class="experience__company">2020 - CaleidosWeb</span>
+                                <p class="experience__description">
+                                    Planificación, diseño y desarrollo del sitio web caleidosweb.com .
+                                    Frontend en CSS3 y VanillaJS. Backend en Laravel 8.
+                                    Lider del equipo de diseñadores y desarrolladores web.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">PDV VERDULERÍA "THIAGO"</h3>
+                                <span class="experience__company">2015 - Verdulería Thiago</span>
+                                <p class="experience__description">
+                                    Planificación, diseño y desarrollo de Punto de venta para la verdulería "Thiago"
+                                    aplicando patrón de diseño MVC en JAVA y SQLite para persistencia de datos.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="certificate" class="certificate section">
+                    <h2 class="section-title">Certificaciones</h2>
+                    <div class="certificate__container bd-grid">
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Certificado al mejor programador</h3>
+                            <p class="certificate__description">Certificación inventada por mi y para mi porque sí.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Certificado al mejor desarrollador</h3>
+                            <p class="certificate__description">Certificación inventada por mi y para mi porque sí.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Certificado al mejor diseñador</h3>
+                            <p class="certificate__description">Certificación inventada por mi y para mi porque sí.</p>
+                        </div>
+
+                    </div>
+                </section>
+                
+                <section id="references" class="references section">
+                    <h2 class="section-title">References</h2>
+                    <div class="references__container bd-grid">
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">CEO</span>
+                            <h3 class="references__title">Mary Palmisano</h3>
+                            <ul class="references__contact">
+                                <li>Teléfono: (221) 570-1010</li>
+                                <li>Email: marypalmisano@gmail.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">CEO</span>
+                            <h3 class="references__title">Mary Palmisano</h3>
+                            <ul class="references__contact">
+                                <li>Teléfono: (221) 570-1010</li>
+                                <li>Email: marypalmisano@gmail.com</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="languages section">
+                    <h2 class="section-title">Idiomas</h2>
+
+                    <div class="languages__container">
+                        <ul class="languajes__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Español (Nativo)
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Inglés (Básico)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+                <section class="interests section">
+                    <h2 class="section-title">Intereses</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="fa fa-microchip interests__icon"></i>
+                            <span class="interests__name">Tecnología</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="fa fa-film interests__icon"></i>
+                            <span class="interests__name">Películas y Series</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="fa fa-torii-gate interests__icon"></i>
+                            <span class="interests__name">Cultura asiática</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
 </body>
 </html>
