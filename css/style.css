@@ -398,3 +398,44 @@ section {
     color: var(--text-color-light);
     margin-bottom: 0.5rem;
 }
+
+
+/* SCROLL TOP */
+
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    /* bottom: 5rem; */
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: var(--container-color-light);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    /* visibility: hidden; */
+}
+
+.scrolltop__icon {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.show-scroll {
+    visibility: visible;
+    bottom: 5rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 320px) {
+    .nav__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem .5rem;
+    }
+
+}
