@@ -43,6 +43,32 @@ html {
     scroll-behavior: smooth; /* Desplazamiento suave */
 }
 
+/* DARCK THEME */
+
+body.dark-theme {
+    --title-color: #F2F2F2;
+    --text-color: #BFBFBF;
+    --container-color: #212121;
+    --container-color-light: #181616;
+    --body-color: #2B2B2B;
+}
+
+/* THEME BUTTON */
+
+.change-theme {
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color: var(--title-color);
+}
+
 body {
     margin: 0 0 var(--header-height) 0; /* Deja un espacio superior para la cabecera*/
     padding: 0;
@@ -437,5 +463,64 @@ section {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem .5rem;
     }
-
 }
+
+@media screen and (min-width: 968px) {
+    body {
+        margin: 3rem 0;
+    }
+
+    bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .l-header,
+    .scrolltop {
+        display: none;
+    }
+
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+    }
+
+    .resume__left {
+        background-color: var(--container-color-light);
+    }
+
+    .resume__left,
+    .resume__right {
+        padding: 0 1.5rem;
+    }
+
+    .section-title,
+    .profile__description {
+        text-align: initial;
+    }
+
+    .home__container {
+        gap: 1.5rem;
+    }
+
+    .home__button-movil {
+        display: none;
+    }
+
+    .references__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .languages__content {
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 3.5rem;
+    }
+
+    .interests__container {
+        grid-template-columns: repeat(4, max-content);
+        column-gap: 3.5rem;
+    }
+}
+
