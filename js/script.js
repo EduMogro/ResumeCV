@@ -95,3 +95,36 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// FOR TOGGLE SCALE CV
+
+function scaleCv() {
+    document.body.classList.add('scale-cv');
+}
+
+function removeScale() {
+    document.body.classList.remove('scale-cv');
+}
+
+let resumeButton = document.getElementById('resume-button');
+let areaCv = document.getElementById('area-cv');
+
+let opt = {
+    margin:       [0, -3, 0, 0], // [-5, -3, 0, 0], // [top, left, bottom, right]
+    filename:     'myResume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    enableLinks:  true,
+    html2canvas:  { scale: 4 },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'p' }
+  };
+
+function generateResume() {
+    html2pdf(areaCv, opt);
+}
+
+resumeButton.addEventListener('click', () => {
+    scaleCv();
+    generateResume();
+    setTimeout(removeScale, 5000);
+});

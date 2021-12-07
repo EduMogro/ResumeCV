@@ -21,6 +21,8 @@
     <link href="css/style.css" rel="stylesheet">
     
     <!-- Scripts -->
+    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script> -->
+    <script src="js/html2pdf.bundle.min.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -80,7 +82,7 @@
     </header>
 
     <main class="l-main bd-container">
-        <div class="resume">
+        <div id="area-cv" class="resume">
             <div class="resume__left">
                 <section id="home" class="home">
                     <div class="home__container section bd-grid">
@@ -89,21 +91,35 @@
                             <h1 class="home__title">Mogro <b>Hugo Eduardo</b></h1>
                             <h3 class="home__profession">Web Developer Jr.</h3>
 
-                            <div><a download="" href="" class="home__button-movil">Descarga</a></div>
+                            <div><a download="download/hugo-eduardo-mogro.pdf" href="" class="home__button-movil">Descarga</a></div>
                         </div>
-                        <div class="home__address bd-grid">
-                            <span class="home__information">
-                                <span class="fa fa-info-circle home__icon"></span>
-                                Part-time, Full-time, Remoto
-                            </span>
-                            <span class="home__information">
-                                <span class="fa fa-envelope home__icon"></span>
-                                hemogro@gmail.com
-                            </span>
-                            <span class="home__information">
-                                <span class="fab fa-linkedin home__icon"></span>
-                                @hugo-eduardo-mogro
-                            </span>
+
+                        <div class="home__address">
+                            <h2 class="section-title">Información</h2>
+
+                            <div class="bd-grid">
+
+                                <span class="home__information">
+                                    <span class="fa fa-info-circle home__icon"></span>
+                                    Part-time, Full-time, Remoto
+                                </span>
+
+                                <a href="https://goo.gl/maps/5K5pwGXgUZUYugms6" target="_blank" rel="noopener noreferrer" class="social__link">
+                                    <i class="fas fa-map-marker-alt home__icon"></i>
+                                    Rosario, Santa Fe, Argentina
+                                </a>
+                                
+                                <a href="mailto:hemogro@gmail.com" target="_blank" rel="noopener noreferrer" class="social__link">
+                                    <i class="fa fa-envelope home__icon"></i>
+                                    hemogro@gmail.com
+                                </a>
+                                
+                                <a href="https://edumogro.github.io" target="_blank" rel="noopener noreferrer" class="social__link">
+                                    <i class="fas fa-globe-americas home__icon"></i>
+                                    edumogro.github.io
+                                </a>
+                            </div>
+
                         </div>
                     </div>
 
@@ -115,10 +131,18 @@
 
                 </section>
 
+
                 <section class="social section">
-                    <h2 class="section-title">REDES</h2>
+                    <h2 class="section-title">Redes</h2>
 
                     <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/edumogro/" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <i class="fab fa-linkedin home__icon"></i>@edumogro
+                        </a>
+                        <a href="https://github.com/EduMogro" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <i class="fab fa-github social__icon"></i>@EduMogro
+                        </a>
+                        </a>
                         <a href="https://www.instagram.com/edumogro/" target="_blank" rel="noopener noreferrer" class="social__link">
                             <i class="fab fa-instagram social__icon"></i>@edumogro
                         </a>
@@ -131,16 +155,9 @@
                     </div>
                 </section>
 
-                <section id="profile" class="profile section">
-                    <h2 class="section-title">Perfil</h2>
-                    <p class="profile__description">
-                        Me encanta programar y ver la mejor forma de resolver los problemas con ayuda del código, 
-                        siempre aprendiendo y aplicando buenas prácticas con principios SOLID, Clean Code y TDD.
-                        Apasionado por la tecnología, la cultura asiatica y el cine.
-                    </p>
-                </section>
+                
 
-                <section id="education" class="education section">
+                <!-- <section id="education" class="education section">
                     <h2 class="section-title">Educación</h2>
 
                     <div class="education__container bd-grid">
@@ -156,45 +173,9 @@
                                 <span class="education__year">2006 - En curso</span>
                             </div>
                         </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">ANALISTA DEL CONOCIMIENTO</h3>
-                                <span class="education__studies">Plan Nacional 111Mil</span>
-                                <span class="education__year">2018</span>
-                            </div>
-                        </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">CURSO PHP Y MYSQL</h3>
-                                <span class="education__studies">Udemy</span>
-                                <span class="education__year">2018</span>
-                            </div>
-                        </div>
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <!-- <span class="education__line"></span> -->
-                            </div>
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">HTML5 FUNDAMENTOS DE UNA PÁGINA WEB</h3>
-                                <span class="education__studies">Educación IT - Online</span>
-                                <span class="education__year">2017</span>
-                            </div>
-                        </div>
                         
                     </div>
-                </section>
+                </section> -->
 
                 <section id="skills" class="skills section">
                     <h2 class="section-title">Habilidades</h2>
@@ -213,10 +194,55 @@
                         </ul>
                     </div>
                 </section>
+
+
+                <section class="languages section">
+                    <h2 class="section-title">Idiomas</h2>
+
+                    <div class="languages__container">
+                        <ul class="languajes__content">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Español (Nativo)
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Inglés (Básico)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+                <!-- <section class="interests section">
+                    <h2 class="section-title">Intereses</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="fa fa-microchip interests__icon"></i>
+                            <span class="interests__name">Tecnología</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="fa fa-film interests__icon"></i>
+                            <span class="interests__name">Películas y Series</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="fa fa-torii-gate interests__icon"></i>
+                            <span class="interests__name">Cultura asiática</span>
+                        </div>
+                    </div>
+                </section> -->
+
             </div>
 
 
             <div class="resume__right">
+
+                <section id="profile" class="profile section">
+                    <h2 class="section-title">Perfil</h2>
+                    <p class="profile__description">
+                        Me encanta programar y ver la mejor forma de resolver los problemas con ayuda del código, 
+                        siempre aprendiendo y aplicando buenas prácticas con principios SOLID, Clean Code y TDD.
+                        Apasionado por la tecnología, la cultura asiatica y el cine.
+                    </p>
+                </section>
 
                 <section id="experience" class="experience section">
                     <h2 class="section-title">Experiencia</h2>
@@ -269,29 +295,31 @@
                     </div>
                 </section>
 
+
                 <section id="certificate" class="certificate section">
                     <h2 class="section-title">Certificaciones</h2>
                     <div class="certificate__container bd-grid">
 
                         <div class="certificate__content">
-                            <h3 class="certificate__title">Certificado al mejor programador</h3>
-                            <p class="certificate__description">Certificación inventada por mi y para mi porque sí.</p>
+                            <h3 class="certificate__title">ANALISTA DEL CONOCIMIENTO</h3>
+                            <p class="certificate__description">2018 | Plan Nacional 111Mil</p>
                         </div>
 
                         <div class="certificate__content">
-                            <h3 class="certificate__title">Certificado al mejor desarrollador</h3>
-                            <p class="certificate__description">Certificación inventada por mi y para mi porque sí.</p>
+                            <h3 class="certificate__title">CURSO PHP Y MYSQL</h3>
+                            <p class="certificate__description">2018 | Udemy</p>
                         </div>
 
                         <div class="certificate__content">
-                            <h3 class="certificate__title">Certificado al mejor diseñador</h3>
-                            <p class="certificate__description">Certificación inventada por mi y para mi porque sí.</p>
+                            <h3 class="certificate__title">HTML5 FUNDAMENTOS DE UNA PÁGINA WEB</h3>
+                            <p class="certificate__description">2017 | EducacionIT</p>
                         </div>
 
                     </div>
                 </section>
+
                 
-                <section id="references" class="references section">
+                <!-- <section id="references" class="references section">
                     <h2 class="section-title">References</h2>
                     <div class="references__container bd-grid">
 
@@ -314,42 +342,10 @@
                         </div>
 
                     </div>
-                </section>
+                </section> -->
 
 
-                <section class="languages section">
-                    <h2 class="section-title">Idiomas</h2>
-
-                    <div class="languages__container">
-                        <ul class="languajes__content bd-grid">
-                            <li class="languages__name">
-                                <span class="languages__circle"></span>Español (Nativo)
-                            </li>
-                            <li class="languages__name">
-                                <span class="languages__circle"></span>Inglés (Básico)
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-
-                <section class="interests section">
-                    <h2 class="section-title">Intereses</h2>
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content">
-                            <i class="fa fa-microchip interests__icon"></i>
-                            <span class="interests__name">Tecnología</span>
-                        </div>
-                        <div class="interests__content">
-                            <i class="fa fa-film interests__icon"></i>
-                            <span class="interests__name">Películas y Series</span>
-                        </div>
-                        <div class="interests__content">
-                            <i class="fa fa-torii-gate interests__icon"></i>
-                            <span class="interests__name">Cultura asiática</span>
-                        </div>
-                    </div>
-                </section>
+                
 
             </div>
         </div>
