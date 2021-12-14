@@ -112,7 +112,7 @@ let areaCv = document.getElementById('area-cv');
 
 let opt = {
     margin:       [0, -3, 0, 0], // [-5, -3, 0, 0], // [top, left, bottom, right]
-    filename:     'myResume.pdf',
+    filename:     'Hugo Eduardo Mogro.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     enableLinks:  true,
     html2canvas:  { scale: 4 },
