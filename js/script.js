@@ -107,6 +107,8 @@ function removeScale() {
     document.body.classList.remove('scale-cv');
 }
 
+// GENERATE PDF
+
 let resumeButton = document.getElementById('resume-button');
 let areaCv = document.getElementById('area-cv');
 

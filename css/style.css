@@ -443,6 +443,13 @@ section {
     color: var(--title-color);
 }
 
+.experience__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: inherit;
+    color: inherit;
+}
+
 .social__icon {
     font-size: 1.2rem;
     margin-right: .25rem;
